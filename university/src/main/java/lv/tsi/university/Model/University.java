@@ -22,16 +22,13 @@ public class University {
     @JsonProperty
     String address;
 
-    @JsonProperty
-    int yearOfAccreditation;
 
     public University() {
     }
 
-    public University(Long id, String name, String address, int yearOfAccreditation) {
+    public University(Long id, String name, String address) {
         this.id = id;
         this.name = name;
         this.address = address;
-        this.yearOfAccreditation = yearOfAccreditation;
     }
 }

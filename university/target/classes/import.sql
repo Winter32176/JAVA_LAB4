@@ -1,4 +1,4 @@
 
-INSERT INTO University (id, name, address, yearOfAccreditation) VALUES(1,'uni1', 'Riga', 2000) ;
-INSERT INTO University (id, name, address, yearOfAccreditation) VALUES(2,'uni2', 'Riga', 2001) ;
-INSERT INTO University (id, name, address, yearOfAccreditation) VALUES(3,'uni3', 'Riga', 2002) ;
+INSERT INTO University (id, name, address) VALUES(1,'uni1', 'Riga') ;
+INSERT INTO University (id, name, address) VALUES(2,'uni2', 'Riga') ;
+INSERT INTO University (id, name, address) VALUES(3,'uni3', 'Riga') ;
