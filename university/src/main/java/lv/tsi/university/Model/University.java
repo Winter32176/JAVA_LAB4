@@ -24,4 +24,14 @@ public class University {
 
     @JsonProperty
     int yearOfAccreditation;
+
+    public University() {
+    }
+
+    public University(Long id, String name, String address, int yearOfAccreditation) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.yearOfAccreditation = yearOfAccreditation;
+    }
 }

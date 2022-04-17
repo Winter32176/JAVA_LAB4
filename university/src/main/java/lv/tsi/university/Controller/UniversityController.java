@@ -7,8 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
 public class UniversityController {
    /* private final UniversityRepository universityRepository;
@@ -16,8 +14,8 @@ public class UniversityController {
     @Autowired
     public UniversityController(UniversityRepository universityRepository) {
         this.universityRepository = universityRepository;
-    }*/
-
+    }
+*/
     private final UniversityService universityService;
 
     @Autowired
@@ -26,7 +24,7 @@ public class UniversityController {
     }
 
     @GetMapping("/university")
-    public ResponseEntity<List<University>> getAllUniversity() {
+    public ResponseEntity<Iterable<University>> getUniversities() {
         return universityService.getUniversities();
     }
     /* @GetMapping("/getUniversity/{id})
